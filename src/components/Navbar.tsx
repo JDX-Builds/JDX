@@ -30,16 +30,19 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? 'border-b border-navy-900/[0.06] bg-white/80 backdrop-blur-xl dark:border-white/[0.06] dark:bg-navy-950/80'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled
+        ? 'border-b border-navy-900/[0.06] bg-white/80 backdrop-blur-xl dark:border-white/[0.06] dark:bg-navy-950/80'
+        : 'bg-transparent'
+        }`}
     >
       <nav className="container-page flex h-18 items-center justify-between py-4">
-        <NavLink to="/" className="flex items-center gap-2 font-display text-xl font-extrabold tracking-tight">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-blue to-brand-cyan text-sm text-white">J</span>
-          <span className="text-navy-900 dark:text-white">JDX</span>
+        <NavLink to="/" className="flex items-center">
+          <img
+            src="/jdx_logo.png"
+            alt="JDX Logo"
+            className="h-10 w-auto object-contain"
+          />
+          <span className="text-navy-900 dark:text-white font-extrabold ">JDX</span>
         </NavLink>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -49,10 +52,9 @@ export default function Navbar() {
               to={link.to}
               end={link.to === '/'}
               className={({ isActive }) =>
-                `rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  isActive
-                    ? 'text-brand-blue dark:text-brand-cyan'
-                    : 'text-navy-500 hover:text-navy-900 dark:text-slate-400 dark:hover:text-white'
+                `rounded-full px-4 py-2 text-sm font-medium transition-colors ${isActive
+                  ? 'text-brand-blue dark:text-brand-cyan'
+                  : 'text-navy-500 hover:text-navy-900 dark:text-slate-400 dark:hover:text-white'
                 }`
               }
             >
@@ -110,8 +112,7 @@ export default function Navbar() {
                   end={link.to === '/'}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `rounded-lg px-4 py-3 text-sm font-medium ${
-                      isActive ? 'bg-brand-blue/10 text-brand-blue dark:text-brand-cyan' : 'text-navy-600 dark:text-slate-300'
+                    `rounded-lg px-4 py-3 text-sm font-medium ${isActive ? 'bg-brand-blue/10 text-brand-blue dark:text-brand-cyan' : 'text-navy-600 dark:text-slate-300'
                     }`
                   }
                 >

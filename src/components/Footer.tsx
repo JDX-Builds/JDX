@@ -16,15 +16,27 @@ export default function Footer() {
     <footer className="border-t border-navy-900/[0.06] bg-surface-light dark:border-white/[0.06] dark:bg-navy-950">
       <div className="container-page py-14">
         <div className="grid gap-12 md:grid-cols-4">
+
+          {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 font-display text-xl font-extrabold">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-blue to-brand-cyan text-sm text-white">J</span>
-              <span className="text-navy-900 dark:text-white">JDX</span>
+
+            {/* JDX Logo */}
+            <div className="flex items-center">
+              <img
+                src="/jdx_logo.png"
+                alt="JDX Software Development & Consultancy"
+                className="h-12 w-auto object-contain"
+              />
+              <span className="font-display text-xl font-extrabold tracking-tight text-navy-900 dark:text-white">
+                JDX
+              </span>
             </div>
+
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-navy-500 dark:text-slate-400">
               A software studio building AI-powered applications, secure systems, and modern products
               &mdash; founded in 2025 by three engineers who like solving real problems.
             </p>
+
             <div className="mt-6 flex items-center gap-3">
               <a
                 href={`mailto:${contactInfo.email}`}
@@ -33,6 +45,7 @@ export default function Footer() {
               >
                 <Mail size={17} />
               </a>
+
               <a
                 href={contactInfo.github}
                 target="_blank"
@@ -42,6 +55,7 @@ export default function Footer() {
               >
                 <GithubIcon size={17} />
               </a>
+
               <a
                 href={contactInfo.linkedin}
                 target="_blank"
@@ -54,8 +68,12 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Navigation */}
           <div>
-            <h4 className="font-display text-sm font-bold text-navy-900 dark:text-white">Navigation</h4>
+            <h4 className="font-display text-sm font-bold text-navy-900 dark:text-white">
+              Navigation
+            </h4>
+
             <ul className="mt-4 space-y-3">
               {nav.map((item) => (
                 <li key={item.to}>
@@ -70,26 +88,43 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Contact */}
           <div>
-            <h4 className="font-display text-sm font-bold text-navy-900 dark:text-white">Contact</h4>
+            <h4 className="font-display text-sm font-bold text-navy-900 dark:text-white">
+              Contact
+            </h4>
+
             <ul className="mt-4 space-y-3 text-sm text-navy-500 dark:text-slate-400">
               <li>
-                <a href={`mailto:${contactInfo.email}`} className="transition-colors hover:text-brand-blue dark:hover:text-brand-cyan">
+                <a
+                  href={`mailto:${contactInfo.email}`}
+                  className="transition-colors hover:text-brand-blue dark:hover:text-brand-cyan"
+                >
                   {contactInfo.email}
                 </a>
               </li>
+
               <li>
-                <a href={contactInfo.github} target="_blank" rel="noreferrer" className="transition-colors hover:text-brand-blue dark:hover:text-brand-cyan">
+                <a
+                  href={contactInfo.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors hover:text-brand-blue dark:hover:text-brand-cyan"
+                >
                   {contactInfo.githubLabel}
                 </a>
               </li>
+
               <li>Available for client projects</li>
             </ul>
           </div>
         </div>
 
+        {/* Copyright */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-navy-900/[0.06] pt-8 text-xs text-navy-400 dark:border-white/[0.06] dark:text-slate-500 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} JDX. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} JDX. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

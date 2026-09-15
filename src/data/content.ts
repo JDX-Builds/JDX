@@ -136,63 +136,48 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: 'client-website',
-    title: 'Client Website',
-    type: 'Client',
-    status: 'Live',
-    description: 'A fully responsive, security-hardened website built for a client, from design to deployment.',
-    overview:
-      'A modern institutional website designed and deployed end-to-end, covering everything from content architecture and admin tooling to cloud infrastructure.',
-    problem:
-      'The client needed a professional online presence with an easy-to-manage content system, but lacked any existing technical infrastructure or in-house engineering support.',
-    solution:
-      'We designed a Flask-based platform with a custom admin panel, image and content management, and production-grade security hardening, deployed on a scalable cloud environment with a custom domain.',
-    technologies: ['Flask', 'Python', 'HTML', 'Google Cloud Run', 'CSS'],
-    gallery: 4,
-  },
-  {
-    slug: 'desktop-application',
-    title: 'Desktop Application',
+    slug: 'cherupushpam up school',
+    title: 'Cherupushpam UP School',
     type: 'Client',
     status: 'Completed',
-    description: 'A modular desktop application for streamlined expense tracking and reporting.',
+    description: "This project reflects JDX's commitment to building modern, accessible, and reliable digital solutions. Working closely with the school, we developed a website that provides students, parents, and visitors with an intuitive platform to explore the institution, its achievements, academics, gallery, announcements, and more.",
     overview:
-      'A five-module desktop application built to help small teams track, categorize, and report on expenses without relying on spreadsheets or cloud subscriptions.',
+      'School Website Development involved building and deploying a full-stack website for Cherupushpam U.P. School using Flask and Jinja2. The project included a secure admin panel with session-based authentication, enabling gallery image management with proper file validation and a dynamic announcement system. The team developed a responsive multi-page interface with animations, counters, and a carousel banner for better user experience. A category-based gallery with lightbox preview and dynamic content rendering was also implemented, ensuring efficient media management and an engaging front-end design.',
     problem:
-      'The client needed an offline-first tool for financial tracking that didn\u2019t rely on recurring SaaS costs or an internet connection.',
+      'The school required a centralized online platform to present academic information, announcements, faculty details, and school activities while allowing administrators to easily manage website content and gallery media.',
     solution:
-      'We built a modular Tkinter application with automated report generation, exporting clean, formatted documents directly from tracked data.',
-    technologies: ['Python', 'Tkinter', 'python-docx', 'OOP'],
+      'Developed a responsive full-stack school website using Flask and Jinja2 with multiple public pages and a secure admin panel. The system enables administrators to manage gallery images and announcements, while dynamic templates, category-based galleries, lightbox previews, animations, and carousel components provide an interactive and user-friendly experience.',
+    technologies: ['Python', 'Java Script', 'Jinja2', 'Html','Css'],
     gallery: 3,
   },
   {
-    slug: 'product-one',
-    title: 'InsightLog',
+    slug: 'InsightLog',
+    title: 'InsightLog: A Lightweight Framework for Explainable Incident Detection in Linux System Logs',
     type: 'Product',
     status: 'Completed',
-    description: 'An in-house analytics and logging product built to surface insights from raw system data.',
+    description: 'InsightLog was designed to help security analysts and system administrators detect suspicious activities from Linux authentication and system logs in real time. By combining structured log parsing, rule-based anomaly detection, incident correlation, and an explainable decision-support interface, the platform transforms raw log data into actionable security insights.',
     overview:
-      'InsightLog is a JDX-built product designed to help teams collect, structure, and understand system-level logs without wrestling with heavyweight observability platforms.',
+      'The system focuses on the analysis of Linux authentication and system logs (auth.log and syslog) generated on a single host or small-scale Linux environment. It supports real-time log ingestion and detection as well as historical log replay for post-incident review and auditing. The framework performs rule-based anomaly and incident detection using structured log fields and temporal correlation without relying on machine learning techniques. Detected anomalies are aggregated into incident-level representations that include timelines, affected entities, severity levels, and supporting evidence. An operator-centric decision-support interface provides explainable incident summaries and allows querying of detected incidents within specified time ranges. The system operates under a human-in-the-loop model, where response actions are suggested but not automatically executed.',
     problem:
-      'Small teams and independent developers often lack access to affordable, approachable logging and insight tools built for their scale.',
+      'Linux systems generate large volumes of authentication and system logs, making it difficult for security analysts to manually identify suspicious activities. Traditional log monitoring can produce excessive noise and may lack clear explanations or correlations between related events.',
     solution:
-      'We built a lightweight logging and analytics platform focused on clarity and speed, giving developers meaningful insight without unnecessary complexity.',
+      'InsightLog provides a lightweight, rule-based framework that parses and structures Linux logs using regular expressions, extracts suspicious patterns, and correlates events across temporal windows. It stores logs in a lightweight database and provides timelines, summaries, and evidence-based insights to support real-time monitoring and forensic investigation while keeping response decisions under human control.',
     technologies: ['Python', 'Bash', 'Log Analysis', 'Shell Scripting'],
     gallery: 3,
   },
   {
-    slug: 'product-two',
-    title: 'Product Two',
-    type: 'Product',
-    status: 'In Development',
-    description: 'An upcoming JDX product exploring AI-assisted workflows for everyday software teams.',
+    slug: 'unique brothers accounts manager',
+    title: 'Unique Brothers Accounts Manager',
+    type: 'Client',
+    status: 'Completed',
+    description: "Designed to simplify accounting and record management operations, the software was built to provide an efficient, organized, and user-friendly solution tailored to the client's requirements.",
     overview:
-      'Our second in-house product, currently in active development, applies practical AI to streamline a common, repetitive workflow for small software teams.',
+      "A desktop application for recording daily income and expenses, built with Python and Tkinter. It captures cash, UPI, and credit income alongside itemized online/cash expenses, then generates a structured Microsoft Word (.docx) report for each day — including opening balance, sales summary, expense breakdown, and closing balance — along with a running cumulative summary across all entries.",
     problem:
-      'Teams frequently lose time on repetitive, manual tasks that could be automated with the right AI-assisted tooling.',
+      'The client needed a simple and reliable way to record daily income and expenses while maintaining accurate cash, UPI, and credit records. Manual accounting made it difficult to track daily balances, calculate profits, maintain cumulative records, and generate organized financial reports.',
     solution:
-      'We are building a focused tool that applies AI where it adds clear, measurable value — full details to be announced at launch.',
-    technologies: ['Python', 'LLM APIs', 'React', 'TypeScript'],
+      'Developed a desktop accounting application using Python and Tkinter to manage date-based income and itemized expenses. The system records cash, UPI, and credit transactions, calculates opening and closing balances, and automatically generates structured Microsoft Word reports for each day. It also maintains a cumulative summary of sales, expenses, and profit, with features such as a safe calculator, duplicate-date handling, previous-balance tracking, and file-lock error handling.',
+    technologies: ['Python', 'Tkinter', 'python-docx', 'OOP'],
     gallery: 2,
   },
 ]
